@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GC Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="mainSection">
+      <div class="title">
+        <h1>Now Showing! For One Night Only.....</h1>
+      </div>
+      <div class="startGame">
+        <button id="startButton">Let The Show Begin</button>
+        <section class="timerContainer">
+          <div class="timer">Countdown Timer: 45Seconds</div>
+        </section>
+      </div>
+      <div class="cardBackground">
+        <ul class="cardDeck">
+          <li data-pair="A" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/Anchorman.jpg"
+                alt="Anchorman Poster"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="A" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/RonBurgendy.jpeg"
+                alt="The Anchorman"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="B" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/B2TF.jpg"
+                alt="Back to the Future Poster"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="B" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/B2TF-MM.jpeg"
+                alt="Marty McFly"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="C" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/Caddyshack-poster.jpeg"
+                alt="Caddyshack Poster"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="C" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/Caddyshack-Bill-Murray.jpeg"
+                alt="Bill Murray"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="D" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/HomeAlonePoster.jpg"
+                alt="Poster"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="D" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/HomeAloneMom.jpeg"
+                alt="Mom screaming"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="E" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/TheMatrix.jpeg"
+                alt="Matrix Poster"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="E" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/Neo.jpeg"
+                alt="The one"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="F" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/Pig2021.jpeg"
+                alt="Pig Poster"
+                class="card-img"
+              />
+            </div>
+          </li>
+          <li data-pair="F" class="card">
+            <div class="cardFront"></div>
+            <div class="cardBack">
+              <img
+                src="JS-movie-images/Pig&NC.jpeg"
+                alt="Two Together"
+                class="card-img"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="endGame">
+        <button id="resetButton">Be Kind, Rewind!</button>
+      </div>
+    </section>
+    <section class="win modal">
+      <div class="win text">
+        <h2>And the award goes to...</h2>
+        <p>Congratulations!</p>
+        <p>You gave a star performance and beat the clock in only</p>
+        <p class="clockTime">25 seconds</p>
+        <button class="win button">Encore!</button>
+      </div>
+    </section>
+    <section class="fail modal">
+      <div class="fail text">
+        <h2>You did not make it.</h2>
+        <p>Unfortunately, you couldn't beat the clock.</p>
+        <p>Better luck next time!</p>
+        <button class="fail button">Play Again</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
